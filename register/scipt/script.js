@@ -66,13 +66,12 @@ function usersubmit() {
         dangerReferrel.style.display = "none";
     }
 
-
-    // window.location.href = "../login/login.html";
     if (name == "" && email == "") {
         console.log("sdfg")
     } else {
         registereduser.push(obj);
         localStorage.setItem("registereduser", JSON.stringify(registereduser));
+        window.location.href = "../login/login.html";
     }
 }
 // localStorage.clear();
